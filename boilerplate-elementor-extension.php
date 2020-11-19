@@ -187,9 +187,9 @@ final class Boilerplate_Elementor_Extension {
 
 		// Add Plugin actions
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'init_widgets' ] );
-        add_action( 'elementor/controls/controls_registered', [ $this, 'init_controls' ] );
-        
-        // Register Widget Styles
+		add_action( 'elementor/controls/controls_registered', [ $this, 'init_controls' ] );
+		
+		// Register Widget Styles
         add_action( 'elementor/frontend/after_enqueue_styles', [ $this, 'widget_styles' ] );
         
         // Register Widget Scripts
@@ -207,10 +207,10 @@ final class Boilerplate_Elementor_Extension {
     public function widget_styles() {
 
         // EXAMPLES
-		// wp_register_style( 'widget-1', plugins_url( 'css/widget-1.css', __FILE__ ) );
-		// wp_register_style( 'widget-2', plugins_url( 'css/widget-2.css', __FILE__ ) );
+		// wp_enqueue_style( 'widget-1', plugins_url( 'css/widget-1.css', __FILE__ ) );
+		// wp_enqueue_style( 'widget-2', plugins_url( 'css/widget-2.css', __FILE__ ) );
 
-        wp_register_style( 'hello-world', plugins_url( 'css/hello-world.css', __FILE__ ) );
+        wp_enqueue_style( 'Hello World', plugins_url( 'css/hello-world.css', __FILE__ ) );
     }
     
     /**
