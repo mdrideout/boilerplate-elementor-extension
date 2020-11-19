@@ -61,7 +61,7 @@ class Hello_World_Widget extends \Elementor\Widget_Base {
 	 * @return array Widget categories.
 	 */
 	public function get_categories() {
-		return [ 'general' ];
+		return [ 'Boilerplate' ];
 	}
 
 	/**

@@ -13,6 +13,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+// Add widget categories
+include('widget-categories.php');
+
 /**
  * Main Elementor Test Extension Class
  *
